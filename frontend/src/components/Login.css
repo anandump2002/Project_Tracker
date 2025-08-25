@@ -1,0 +1,320 @@
+
+
+
+/*  
+
+.login-container {
+  width: 320px;
+  margin: 80px auto;
+  padding: 25px;
+  border-radius: 10px;
+  background: #fdfbfb;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.login-container h2 {
+  margin-bottom: 20px;
+  color: #2f3542;
+}
+
+.login-container input {
+  width: 100%;
+  margin: 10px 0;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.login-container button {
+  width: 100%;
+  padding: 12px;
+  background: #6c5ce7;
+  color: rgb(234, 236, 240);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 10px;
+  transition: background 0.3s;
+}
+
+.login-container button:hover {
+  background: #341f97;
+}
+
+.login-container .error {
+  color: red;
+  margin-top: 10px;
+  font-size: 14px;
+} */
+
+
+
+
+
+/* body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+} */
+
+/* Navbar */
+/* .navbar {
+  background: #2575fc;
+  color: white;
+  padding: 1rem 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.navbar nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: 500;
+}
+
+.navbar nav a:hover,
+.navbar nav a.active {
+  text-decoration: underline;
+} */
+
+/* Page layout */
+/* .login-page,
+.register-page {
+  display: flex;
+  justify-content: center;
+  padding: 50px 0;
+} */
+
+/* Form box */
+/* .login-box,
+.register-box {
+  background: white;
+  padding: 2rem 3rem;
+  border-radius: 10px;
+  width: 400px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.login-box h2,
+.register-box h2 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.subtitle {
+  color: #777;
+  margin-bottom: 20px;
+} */
+
+/* Inputs */
+/* .login-input,
+.register-input {
+  width: 100%;
+  padding: 10px 14px;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.login-input:focus,
+.register-input:focus {
+  border-color: #2575fc;
+  box-shadow: 0 0 6px rgba(37, 117, 252, 0.4);
+  outline: none;
+} */
+
+/* Buttons */
+/* .login-button,
+.register-button {
+  width: 100%;
+  padding: 12px;
+  background: #2575fc;
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login-button:hover,
+.register-button:hover {
+  background: #1d5ecc;
+} */
+
+
+/* ===== Reset some default styles ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+/* ===== Navbar (same as register) ===== */
+.navbar {
+  width: 100%;
+  padding: 15px 40px;
+  background: #214fc4;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .logo {
+  font-size: 5rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.navbar nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 25px;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.navbar nav a:hover {
+  color: #e89919;
+}
+.navbar .logo:hover {
+  color: #e89919;
+}
+
+
+/* .navbar nav a.active {
+  color: #f39c12;
+  font-weight: 600;
+} */
+
+/* ===== Login Page ===== */
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Full height minus navbar */
+  /* background:rgb(149, 204, 200); */
+  width: 100vw;
+
+}
+
+/* ===== Login Box ===== */
+.login-box {
+  background: rgb(201, 218, 206);
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+    transform: translate(-50%, -50%);
+    position: absolute;
+  
+  /* New line */
+  transform: translateY(-40px); /* Move it up (adjust px as you like) */
+}
+
+.login-box h2 {
+  margin-bottom: 10px;
+  font-size: 1.8rem;
+  color: #333;
+}
+
+.subtitle {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 25px;
+}
+
+/* ===== Input Styles ===== */
+.login-input {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 18px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border 0.3s ease;
+}
+
+.login-input:focus {
+  border-color: #0072ff;
+  outline: none;
+}
+
+/* ===== Button Styles ===== */
+.login-button {
+  width: 100%;
+  padding: 12px;
+  background: #0072ff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.login-button:hover {
+  background: #0056cc;
+}
+.bg-image {
+  position: fixed;      /* sticks to the viewport */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;    /* scales image properly */
+  z-index: -1;          /* keeps image behind content */
+}
+
+.login-links {
+  margin-top: 15px;
+  font-size: 0.9rem;
+  color: #444;
+}
+
+.login-links .forgot {
+  color: #0072ff;
+  cursor: pointer;
+  margin-bottom: 8px;
+}
+
+.login-links .forgot:hover {
+  text-decoration: underline;
+}
+
+.login-links .signup {
+  color: #333;
+}
+
+.login-links .signup span {
+  color: #0072ff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.login-links .signup span:hover {
+  text-decoration: underline;
+}

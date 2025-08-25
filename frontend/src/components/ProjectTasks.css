@@ -1,0 +1,77 @@
+.task-dashboard {
+  padding: 20px 100px;
+  
+  width: 100vw;
+    /* page takes at least full screen */
+   /* enable scrolling if content grows */
+  text-align: center;
+  box-sizing: border-box;
+  color: rgb(8, 8, 8);
+}
+
+/* remove overflow-y from form */
+.form-section {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  margin: 20px;
+  padding: 0px 160px;
+ 
+}
+
+
+.form-section input,
+.form-section select {
+  padding:0px 20px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  flex: 1;               
+  min-width: 200px;
+}
+
+.btn {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn.purple {
+  background: #6c5ce7;
+  color: white;
+}
+
+.btn.yellow {
+  background: #fdcb6e;
+  color: black;
+}
+
+.btn.red {
+  background: #d63031;
+  color: white;
+}
+
+.task-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 20px;
+ 
+  
+}
+
+.task-card {
+  background: rgb(208, 215, 232);
+  padding: 10px 80px;
+  margin: 10px 100px ;
+  border-radius: 8px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  color: black ;
+}
+
+.actions {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+}

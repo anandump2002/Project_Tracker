@@ -1,0 +1,52 @@
+.home {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+    background-attachment: fixed;  
+}
+
+.bg-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;   
+  z-index: -1;         
+}
+
+.home-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  text-align: center;
+  background: rgba(182, 193, 229, 0.726);
+  padding: 30px 30px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+}
+
+
+.home-content h1 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #f8f9fb;
+}
+
+.btn.primary {
+  padding: 12px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  background: #6c5ce7;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn.primary:hover {
+  background: #4a3fcf;
+}

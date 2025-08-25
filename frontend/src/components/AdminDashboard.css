@@ -1,0 +1,503 @@
+/* .admin-dashboard {
+  display: flex;
+  min-height: 665px;
+  width: 1300px;
+  font-family: Arial, sans-serif;
+} */
+
+/* Sidebar */
+
+/* .sidebar {
+  width: 220px;
+  background: #2f3542;
+  color: white;
+  padding: 20px;
+}
+
+.sidebar .logo {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin: 15px 0;
+  cursor: pointer;
+}
+
+.sidebar ul li:hover {
+  text-decoration: underline;
+}
+
+/* Main Content */
+/* 
+.main-content {
+  flex: 1;
+  padding: 20px;
+  background: #3c466d;
+} */
+
+/* Cards (buttons) */
+/* 
+.cards {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn.purple {
+  background: #6c5ce7;
+  color: white;
+}
+
+.btn.yellow {
+  background: #fdcb6e;
+  color: black;
+}
+
+.btn.red {
+  background: #d63031;
+  color: white;
+}
+
+.btn.fetch {
+  background: #0984e3;
+  color: rgb(255, 255, 255);
+} */ 
+
+/* Recent Section */
+
+/* .recent h2 {
+  margin-bottom: 10px;
+}
+
+pre {
+  background: #4a849d;
+  padding: 10px;
+  border-radius: 6px;
+} */
+
+
+
+
+/* .admin-dashboard {
+  display: flex;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+} */
+
+/* Sidebar */
+/* .sidebar {
+  width: 220px;
+  background: #2f3542;
+  color: rgb(249, 244, 244);
+  padding: 20px;
+}
+
+.sidebar .logo {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin: 15px 0;
+  cursor: pointer;
+}
+
+.sidebar ul li:hover {
+  text-decoration: underline;
+} */
+
+/* Main Content */
+/* .main-content {
+  flex: 1;
+  padding: 20px;
+  background: #5767a6;
+}
+
+h2 {
+  margin-bottom: 15px;
+} */
+
+/* Forms */
+/* .form-section {
+  margin-bottom: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.form-section input {
+  padding: 8px;
+  border: 1px solid #30696e;
+  border-radius: 6px;
+  flex: 1;
+} */
+
+/* Buttons */
+/* .btn {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn.purple {
+  background: #6c5ce7;
+  color: white;
+}
+
+.btn.yellow {
+  background: #fdcb6e;
+  color: black;
+}
+
+.btn.red {
+  background: #d63031;
+  color: white;
+} */
+
+/* Projects List */
+/* .project-card {
+  background: rgb(168, 79, 79);
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+}
+
+.project-card h3 {
+  margin: 0;
+}
+
+.actions {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+} */
+
+
+
+/* 
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;  
+} */
+
+/* Make sure app takes full screen */
+/* html, body, #root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+} */
+
+/* Dashboard wrapper */
+/* .admin-dashboard {
+  display: flex;
+  height: 100vh;
+  width: 100%;         
+  font-family: Arial, sans-serif;
+  overflow: hidden; 
+} */
+
+/* Sidebar */
+/* .sidebar {
+  width: 220px;              
+  background: #2f3542;
+  color: #f9f4f4;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+} */
+/* 
+.sidebar {
+  width: 220px;
+  background: #2f3542;
+  color: #f9f4f4;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sidebar .logo {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  flex: 1;
+}
+
+.sidebar ul li {
+  margin: 15px 0;
+  cursor: pointer;
+}
+
+.sidebar ul li:hover {
+  text-decoration: underline;
+} */
+
+/* Main Content */
+/* .main-content {
+  flex: 1;
+  padding: 20px;
+  background: #5767a6;
+  height: 100%;
+  overflow-y: overlay;    
+} */
+/* 
+
+
+html {
+  overflow-y: auto;
+}
+
+
+h2 {
+  margin-bottom: 15px;
+  color: #fff;
+} */
+
+/* Forms */
+/* .form-section {
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.form-section input {
+  padding: 8px;
+  border: 1px solid #30696e;
+  border-radius: 6px;
+  flex: 1;
+  min-width: 200px;
+} */
+
+/* Buttons */
+/* .btn {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn.purple {
+  background: #6c5ce7;
+  color: white;
+}
+
+.btn.yellow {
+  background: #fdcb6e;
+  color: black;
+}
+
+.btn.red {
+  background: #d63031;
+  color: white;
+} */
+
+/* Project Cards */
+/* .project-card {
+  background: #a84f4f;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+  color: white;
+}
+
+.project-card h3 {
+  margin: 0;
+}
+
+.actions {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+} */
+
+/* Logout button */
+/* .logout-btn {
+  margin-top: 50px;
+  width: 100%;
+} */
+
+
+
+
+
+.admin-dashboard {
+  display: flex;
+  background: #121212;
+  color: white;
+  font-family: Arial, sans-serif;
+  width: 100vw;
+  height: 100vh;          /* fix full screen */
+  overflow: hidden;       /* prevent double scroll */ 
+}
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  background: #152a4d;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-around; */
+  gap: 10px;
+  flex-shrink: 0;         /* sidebar stays fixed width */
+  height: 100%;           /* full height */
+  overflow-y: auto;       /* scroll if sidebar itself grows */
+}
+.sidebar .logo {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+     color: #e89919;
+      font-size: 1.8rem;
+}
+
+
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+.sidebar ul li {
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+.greeting {
+  margin: 20px 0;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #f9f4f4;
+}
+
+/* Main content */
+.main-content {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  height: 100%; 
+  text-align: center;
+}
+
+/* Cards */
+.cards {
+  /* display: flex; */
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.form-section {
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  
+}
+
+.form-section input {
+  padding: 8px;
+  border: 1px solid #30696e;
+  border-radius: 6px;
+  flex: 1;
+  min-width: 200px;
+}
+
+.btn {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.btn.purple {
+  background: purple;
+  color: white;
+}
+.btn.yellow {
+  background: orange;
+  color: black;
+}
+.btn.red {
+  background: #d63031;
+  color: white;
+}
+.btn.fetch {
+  margin-top: 10px;
+  background: #dd6262;
+  color: white;
+}
+
+/* Recent section */
+.recent {
+  margin-top: 20px;
+  padding: 0px 120px;
+}
+
+/* Project Cards (same style as task cards) */
+.project-card {
+  background: white;
+  padding: 35px;
+  border-radius: 8px;
+  margin-bottom: 40px;
+  box-shadow: 0px 2px 5px rgba(178, 57, 166, 0.668);
+}
+
+.project-card h3 {
+  margin: 0;
+  color: #141415;
+}
+
+.project-card p {
+  margin: 4px 0;
+  color: #0c0b0e;
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+}
+
+.project-card select {
+  margin-top: 6px;
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background: #54708b;
+}

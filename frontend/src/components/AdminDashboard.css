@@ -501,3 +501,35 @@ h2 {
   border-radius: 6px;
   background: #54708b;
 }
+
+
+.progress-bar {
+  width: 100%;
+  height: 12px;
+  background: #ccc;
+  border-radius: 6px;
+  margin: 8px 0;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: #6c5ce7; /* purple */
+  transition: width 0.4s ease-in-out;
+}
+
+
+.filter-bar {
+  margin: 15px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.filter-bar select {
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background: #f2f2f2;
+  cursor: pointer;
+}

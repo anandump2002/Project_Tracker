@@ -1,20 +1,24 @@
 const Task = require("../models/Task");
 
-// Create Task under a project
+// createTask
 exports.createTask = async (req, res) => {
   try {
-    const { title, description, assignedTo } = req.body;
-    const task = await Task.create({
+    const { title, description, priority, dueDate, assignedTo } = req.body;
+    const task = new Task({
       title,
       description,
+      priority,
+      dueDate,
       project: req.params.projectId,
       assignedTo
     });
-    res.status(201).json(task);
+    await task.save();
+    res.json(task);
   } catch (err) {
-    res.status(400).json({ error: "Error creating task", details: err.message });
+    res.status(500).json({ error: "Error creating task" });
   }
 };
+
 
 // Get all tasks of a project
 exports.getTasks = async (req, res) => {
@@ -26,14 +30,18 @@ exports.getTasks = async (req, res) => {
   }
 };
 
-// Update task
+// updateTask
 exports.updateTask = async (req, res) => {
   try {
-    const task = await Task.findByIdAndUpdate(req.params.taskId, req.body, { new: true });
-    if (!task) return res.status(404).json({ error: "Task not found" });
+    const { title, description, status, priority, dueDate, assignedTo } = req.body;
+    const task = await Task.findByIdAndUpdate(
+      req.params.taskId,
+      { title, description, status, priority, dueDate, assignedTo },
+      { new: true }
+    );
     res.json(task);
   } catch (err) {
-    res.status(400).json({ error: "Error updating task" });
+    res.status(500).json({ error: "Error updating task" });
   }
 };
 

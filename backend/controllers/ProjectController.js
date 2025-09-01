@@ -1,5 +1,5 @@
 const Project = require("../models/Project");
-
+const Task = require("../models/Task");
 // Create Project
 exports.createProject = async (req, res) => {
   try {
@@ -14,11 +14,35 @@ exports.createProject = async (req, res) => {
   }
 };
 
-// Read All Projects
+// Get all projects (with progress)
 exports.getProjects = async (req, res) => {
   try {
     const projects = await Project.find();
-    res.json(projects);
+
+    // For each project, calculate progress
+    const projectsWithProgress = await Promise.all(
+      projects.map(async (project) => {
+        const totalTasks = await Task.countDocuments({ project: project._id });
+        const completedTasks = await Task.countDocuments({
+          project: project._id,
+          status: "done",
+        });
+
+        let progress = 0;
+        if (totalTasks > 0) {
+          progress = Math.round((completedTasks / totalTasks) * 100);
+        }
+
+        return {
+          ...project.toObject(),
+          totalTasks,
+          completedTasks,
+          progress,
+        };
+      })
+    );
+
+    res.json(projectsWithProgress);
   } catch (err) {
     res.status(500).json({ error: "Error fetching projects" });
   }

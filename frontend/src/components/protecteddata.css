@@ -123,3 +123,37 @@
   background: #eff0f1;
 }
 
+
+/* === Status-based Colors === */
+.task-card.todo {
+  background: #3a3a3a;
+  border-left: 6px solid gray;
+}
+.task-card.in-progress {
+  background: #ffecb3;
+  border-left: 6px solid orange;
+  color: #1c1c1c;
+}
+.task-card.done {
+  background: #c8e6c9;
+  border-left: 6px solid green;
+  color: #1c1c1c;
+}
+
+
+.priority {
+  font-weight: bold;
+  margin-top: 6px;
+}
+
+.priority-high {
+  color: red;
+}
+
+.priority-medium {
+  color: orange;
+}
+
+.priority-low {
+  color: green;
+}
